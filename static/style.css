@@ -94,3 +94,11 @@ button[type="submit"]:hover {
   font-size: 0.8em;
   color: #888;
 }
+
+.loading-animation{
+  display:none;
+}
+
+.loading-animation.show{
+  display:block;
+}
