@@ -4,6 +4,8 @@ form.onsubmit = async (e) => {
     e.preventDefault();
     const userInput = form.querySelector('[name="user-input"]');
     const animation = document.querySelector('.loading-animation');
+    const outputDiv = document.querySelector('.msg');
+    outputDiv.innerHTML = "";
     animation.classList.add('show');
     let result  = "";
     let processed_message = "";
@@ -16,7 +18,6 @@ form.onsubmit = async (e) => {
 
     // const response = await fetch('http://localhost:3000/0')
 
-    const outputDiv = document.querySelector('.message');
     const footer  = document.querySelector('.footer');
     userInput.value = "";
     let timestamp = "";
